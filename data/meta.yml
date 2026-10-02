@@ -1,0 +1,36 @@
+indicator:
+  name: Lake Temperature
+  slug: lake-temperature
+  publisher: U.S. Environmental Protection Agency
+  source_page: https://19january2025snapshot.epa.gov/climate-indicators/climate-change-indicators-lake-temperature/index.html
+  technical_documentation: https://19january2025snapshot.epa.gov/sites/default/files/2021-03/documents/lake-temperature_td.pdf
+  rights: Public domain, work of the U.S. Government (17 U.S.C. 105)
+datasets:
+- file: lake_temperature_fig1.csv
+  figure: Figure 1
+  figure_title: Figure 1. Change in Temperature for Selected North American Lakes,
+    1985-2009
+  source_file: lake-temp_fig-1_data.csv
+  source_sha256: 7f4893dd6032371977052c72c188193471db98bfba3fa8fc93fe715abe296f87
+  source_encoding: windows-1252
+  data_source: Sharma et al., 2015
+  web_update: April 2021
+  unit: °F
+  rows: 34
+  columns:
+  - name: lake
+    type: string
+    description: Lake name.
+  - name: latitude
+    type: number
+    description: Latitude of the lake in decimal degrees (north positive).
+  - name: longitude
+    type: number
+    description: Longitude of the lake in decimal degrees (west negative).
+  - name: value
+    type: number
+    description: Total change in average summer surface water temperature, 1985-2009,
+      in degrees Fahrenheit.
+  - name: significant
+    type: string
+    description: 'Whether the change is statistically significant: Yes or No.'
